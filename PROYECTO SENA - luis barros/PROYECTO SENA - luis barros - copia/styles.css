@@ -1,0 +1,462 @@
+body {
+    background-color: #e0f2fe;
+    font-family: 'K2D', sans-serif;
+    font-family: 'Poiret One', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    font-family: 'PT Sans Narrow', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    color: #000040;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: #000040;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+h3 {
+    text-align: center;
+    color: #000040;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+p {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    text-align: center;
+    color: #000040;
+    font-size: 18px;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*inicio header barra de navegacion*/
+
+#titulo {
+    text-shadow: 0px 0px 10px white;
+    color: #08edff;
+    transition: 1s;
+}
+
+#titulo:hover {
+    color: white;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    background-color: #000040;
+    color: white;
+}
+
+@media(min-width:800px) {
+    .navegacion {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2px;
+    }
+}
+
+@media(min-width:800px) {
+    .navegacion {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2px;
+    }
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    background-color: #000040;
+}
+
+@media(min-width:800px) {
+    .navegacion {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2px;
+    }
+}
+
+.navegacion__a {
+    text-align: center;
+    color: #08edff;
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 12px white;
+    transition: 1s;
+    text-transform: uppercase;
+}
+
+@media(min-width: 200px) {
+    .navegacion__a:hover {
+        transition: 0.5s;
+        color: #000040;
+        background-color: white;
+    }
+}
+
+@media(min-width: 800px) {
+    .navegacion__a:hover {
+        background-color: #000040;
+        color: white;
+    }
+}
+
+.input-text {
+    height: 25px;
+    background-color: white;
+    border-radius: 2px;
+    border: none;
+    background-image: url(/search.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    text-align: center;
+}
+
+@media(max-width:799px) {
+    .input-text {
+        min-width: 50%;
+        margin: 1rem auto;
+    }
+}
+
+.header {
+    box-shadow: 0px 4px 5px white;
+}
+
+
+/*FIN HEADER BARRA DE NAVEGACION*/
+
+
+/*object-fit: cover;ara que las imagenes queden todas del mismo tamaño, primero darles un height y un width*/
+
+
+/*INICIO CARRRUSEL PRINCIPAL #1*/
+
+.slider {
+    width: 96%;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.slides {
+    display: flex;
+    animation: desplazar 20s infinite;
+}
+
+.slide {
+    min-width: 100%;
+    flex: 1;
+}
+
+img {
+    width: 100%;
+    height: 380px;
+}
+
+@keyframes desplazar {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    75% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/*FINAL CARRRUSEL PRINICIPAL #1*/
+
+
+/*INICIO SECCION PRINCIPAL nuestros servicios, nuestros clientres , fuerza de ventas */
+
+.seccionPrincipal {
+    background-image: url(hero/montaña.jpg);
+    background-repeat: no-repeat;
+    max-width: 90%;
+    background-position: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+}
+
+.seccionPrincipal_1 {
+    margin: 0 auto;
+    height: 25rem;
+    width: 20rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+.seccionPrincipal_1:hover {
+    color: #000000;
+    opacity: .9;
+    cursor: pointer;
+}
+
+.container-principal {
+    grid-column: 1 / 4;
+}
+
+#img-sec-1 {
+    background-image: url(fotos/servicios.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#img-sec-2 {
+    background-image: url(fotos/clientes.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#img-sec-3 {
+    background-image: url(fotos/fuerzaventa.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-seccion {
+    width: 100%;
+    border: none;
+    height: 3rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container-principal h2,
+p {
+    color: white;
+}
+
+
+/*FINAL  SECCION PRINCIPAL nuestros servicios, nuestros clientres , fuerza de ventas */
+
+
+/*INICIO SECCION 1*/
+
+.contenido-seccion {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 10px auto -10px auto;
+    box-shadow: 5px 5px 2px gray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 96%;
+    background-color: white;
+    font-size: 18px;
+}
+
+.contenido-seccion_1 {
+    grid-column: 1 / 4;
+}
+
+.seccion1_a {
+    display: flex;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 1rem;
+    border: 1px solid #00065b;
+    max-width: 5rem;
+    border-radius: 4px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: .8s;
+}
+
+.seccion1_a:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 00px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: .9s;
+    background-color: #36bffa;
+    border: none;
+}
+
+.color-blanco {
+    color: #000040;
+}
+
+
+/*FINAL SECCION 1*/
+
+
+/*INICIO MENU PRINCIPAL*/
+
+.contenedor-principal {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+    margin: 0px auto 10px auto;
+    background-color: #00065b;
+    padding: 10px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 96%;
+    box-shadow: 5px 5px 2px gray;
+    font-size: 18px;
+}
+
+@media (min-width: 800px) {
+    .contenedor-principal {
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+
+.menu-principal-grid {
+    grid-column: 1 / 6;
+}
+
+.contenedor-principal h2 {
+    color: white;
+}
+
+.contenedor {
+    line-height: 1.8rem;
+    transition: .5s;
+}
+
+.contenedor h3 {
+    color: white;
+}
+
+.contenedor p {
+    color: white;
+}
+
+.contenedor:hover {
+    background-color: #36bffa;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 110px;
+    border-bottom-left-radius: 15px;
+    border: none;
+    ;
+}
+
+
+/*Final MENU PRINCIPAL*/
+
+
+/*incio Seccion proovedores*/
+
+.slider_proovedores {
+    position: relative;
+    width: 100%;
+    margin: 10px auto;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px black;
+}
+
+.slides_proovedores {
+    display: flex;
+    width: 200%;
+    /*16slides=200%*/
+    animation: slideAnimation_proovedores 15s linear infinite;
+}
+
+.slide_proovedores {
+    width: 6.25%;
+    /* 100% / 16 slides */
+}
+
+.slide_proovedores img {
+    width: 100%;
+    display: block;
+    height: 160px;
+}
+
+@keyframes slideAnimation_proovedores {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+    /* Mueve la mitad para mostrar las 8 imágenes originales */
+}
+
+
+/* FINAL Seccion de proovedores */
+
+
+/*INICIO FOOTER*/
+
+.contenedor-footer {
+    box-shadow: 5px 5px 2px gray;
+    padding: 2rem 1rem;
+    display: flex;
+    display: block;
+    font-size: 1.2rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #00065b;
+}
+
+@media (min-width: 800px) {
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.svg {
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+
+/*FINAL FOOTER*/
