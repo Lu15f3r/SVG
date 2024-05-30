@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreo de Pedidos</title>
+    <link rel="stylesheet" href="rastreo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Rastreo de Pedidos</h1>
+        <form id="trackingForm">
+            <div class="form-group">
+                <label for="trackingNumber">Número de Guía:</label>
+                <input type="text" id="trackingNumber" name="trackingNumber" required>
+            </div>
+            <button type="submit">Rastrear Pedido</button>
+        </form>
+        <div id="trackingInfo"></div>
+    </div>
+    <script src="rastreo.js"></script>
+</body>
+
+</html>
